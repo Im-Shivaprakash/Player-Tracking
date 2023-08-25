@@ -3,7 +3,7 @@ from PIL import Image
 
 model = YOLO("yolov8n.pt")
 
-results = model.predict('/home/shivaprakash/Documents/git/YOLO/dog.jpeg')
+results = model.predict('/home/shivaprakash/Documents/git/YOLO/TASK 1 - Inference/dog.jpeg')
 
 for r in results:
     im_array = r.plot()  # plot a BGR numpy array of predictions
